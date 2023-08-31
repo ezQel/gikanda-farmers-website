@@ -1,0 +1,477 @@
+:root {
+  --primary: #46af4d;
+  --text-secondary: #1c1d4e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  background: url("assets/bg.png");
+  background-color: rgba(0, 0, 0, 0.942);
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  padding-bottom: 64px;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 4px 24px;
+  border-bottom: 1px solid #494a71;
+}
+
+.menu {
+  flex-grow: 1;
+  text-align: end;
+}
+
+ul.menu {
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 48px;
+}
+
+.menu li > a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 12px;
+}
+
+.menu li a:hover,
+.menu li a.active {
+  border-bottom: 2px solid white;
+}
+
+h1.headline {
+  margin-top: 78px;
+  font-size: 84px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.paragraph {
+  display: flex;
+  justify-content: center;
+}
+
+.details {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.stats {
+  text-align: center;
+  margin-left: 120px;
+}
+
+.stats > .stat {
+  margin: 24px;
+  text-align: start;
+  display: inline-block;
+}
+
+.stat-figure {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.stat-info {
+  font-size: 14px;
+}
+
+.team {
+  padding: 64px;
+  background-color: #f5f5f5;
+}
+
+.team > h2 {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.team-members {
+  margin-top: 48px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.team-members::-webkit-scrollbar {
+  display: none;
+}
+
+.member {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.member img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.member .member-details {
+  position: relative;
+  border-radius: 8px;
+  padding: 16px;
+  padding-bottom: 64px;
+  background-color: white;
+  margin-top: -12px;
+  z-index: 2;
+}
+
+.member .member-details strong {
+  font-weight: 600;
+}
+
+.team h3 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.team h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.why-choose {
+  display: flex;
+  align-items: center;
+  padding: 72px 32px;
+}
+
+.why-choose img {
+  flex-grow: 1;
+  height: 453px;
+}
+
+.why-choose .list {
+  flex-grow: 1;
+}
+
+.why-choose .list h2 {
+  color: var(--primary);
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.why-choose ul {
+  list-style: none;
+  font-size: 14px;
+}
+
+.why-choose ul li {
+  margin-bottom: 8px;
+}
+
+.why-choose .thank-you {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.community-impact {
+  background-color: #efeff8;
+  padding: 96px;
+  padding-bottom: 120px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 96px;
+}
+
+.impact-info .company {
+  color: #086bed;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.impact-info h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1c1d4e;
+  margin-bottom: 16px;
+}
+
+.impact-info p {
+  color: #1c1d4e;
+  margin-bottom: 48px;
+}
+
+.impact-info button {
+  all: unset;
+  padding: 18px;
+  font-weight: 800;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 8px;
+}
+
+.impact-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.impact {
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.impact h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.impact p {
+  font-size: 12px;
+  color: #1c1d4e;
+}
+
+.impact:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.impact:hover > p {
+  color: white;
+}
+
+.farmers {
+  padding: 120px;
+  text-align: center;
+}
+
+.farmers h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1c1d4e;
+}
+
+.farmers-list {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.farmer {
+  border-radius: 8px;
+  border: 1px solid #eceff4;
+  width: 360px;
+  vertical-align: top;
+}
+
+.farmer .farmer-image {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+}
+
+.farmer-info {
+  padding: 18px;
+  text-align: start;
+}
+
+.farmer-info p {
+  color: #525760;
+}
+
+.farmer-info .date {
+  font-family: "Nunito Sans", "Poppins", sans-serif;
+  font-size: 12px;
+  color: #80848e;
+  margin-bottom: 16px;
+}
+
+.farmer-info .name {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #090d2c;
+}
+
+.farmer-info p {
+  color: #525760;
+  font-size: 14px;
+  margin: 16px 0;
+}
+
+.farmer-footer {
+  display: flex;
+}
+
+.farmer-footer .read-more {
+  flex-grow: 1;
+}
+
+.farmer-footer .read-more a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.farmer-footer .eye {
+  padding: 6px 12px;
+  background-color: #f0f3f8;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.eye img {
+  vertical-align: middle;
+}
+
+.show-more {
+  padding: 32px;
+  text-align: center;
+  position: relative;
+}
+
+.show-more button {
+  all: unset;
+  padding: 12px 24px;
+  border: 3px solid var(--primary);
+  border-radius: 12px;
+  font-weight: 700;
+  font-family: "Nunito Sans", "Poppins", sans-serif;
+  color: var(--primary);
+}
+
+.show-more img {
+  position: absolute;
+  top: -160px;
+  left: -24px;
+}
+
+.chairman {
+  display: grid;
+  gap: 96px;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 120px;
+  padding-bottom: 120px;
+}
+
+.chairman h2 {
+  font-family: "Montserrat", "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #1c1d4e;
+}
+
+.chairman p {
+  color: #4d4d4d;
+  margin-top: 36px;
+}
+
+.chairman hr {
+  border-color: #eceff4;
+  margin: 32px 0;
+  border-width: 0.5px;
+}
+
+.chairman-name {
+  font-family: "Montserrat", "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.chairman-title {
+  color: #80848e;
+  margin-top: 12px;
+}
+
+.join-us {
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.join-card {
+  border: 1px solid #dcdce5;
+  border-radius: 16px;
+  margin: 0 160px;
+  padding: 32px;
+  background-color: white;
+}
+
+.join-card h2,
+.join-card p {
+  margin-left: 72px;
+}
+
+.join-card h2 {
+  font-size: 48px;
+  font-family: "Montserrat", "Poppins", sans-serif;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.join-card p {
+  margin-bottom: 32px;
+  font-size: 18px;
+  color: #4d4d4d;
+}
+
+.join-us .become-member {
+  all: unset;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 600;
+  padding: 18px 24px;
+  vertical-align: top;
+  margin-left: 24px;
+  border-radius: 12px;
+}
+
+.join-us .mockup {
+  position: absolute;
+  top: -160px;
+  right: 96px;
+}
+
+.footer {
+  background-color: black;
+  padding: 64px 120px;
+  color: white;
+}
+
+.footer hr {
+  border-color: rgb(85, 85, 85);
+  border-width: 0.1px;
+  margin-bottom: 64px;
+}
+
+.footer-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.footer-title {
+  font-family: "Montserrat", "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.green-name {
+  color: var(--primary);
+}
