@@ -10,7 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -20,6 +21,7 @@
           loop
           poster="assets/video-thumb.jpg"
           autoplay
+          muted
         ></video>
       </div>
 
@@ -50,11 +52,11 @@
 
       <div class="stats">
         <div class="stat">
-          <div class="stat-figure">400+</div>
+          <div class="stat-figure" id="active-farmers">400+</div>
           <div class="stat-info">Active Farmers and Members</div>
         </div>
         <div class="stat">
-          <div class="stat-figure">23+</div>
+          <div class="stat-figure" id="num-years">23+</div>
           <div class="stat-info">
             Years Gikanda Farmers has been in operation
           </div>
@@ -128,24 +130,26 @@
     </section>
 
     <section class="why-choose">
-      <img src="assets/coffee-beans.png" alt="" />
-
+      <div class="images">
+        <img class="coffee-beans" src="assets/coffee-beans.png" alt="" />
+        <img class="coffee-cup" src="assets/coffee-cup.png" alt="" />
+      </div>
       <div class="list">
-        <h2>Why Choose Gikanda Coffee</h2>
+        <h2>Why Choose <br> Gikanda Coffee</h2>
         <ul>
           <li>
-            <strong>Pure Terroir:</strong>
+            <strong>Pure Terroir</strong> <br>
             Our coffee cherishes its birthplace, thriving on the unique terroir
             created by Mount Kenya's majestic presence and nourished by the
             vibrant red volcanic soils.
           </li>
           <li>
-            <strong>Premium Quality:</strong>
+            <strong>Premium Quality</strong> <br>
             Gikanda Coffee is celebrated for its exquisite flavor profile, with
             notes that dance on your palate.
           </li>
           <li>
-            <strong>Sustainability & Heritage:</strong>
+            <strong>Sustainability & Heritage</strong> <br>
             We are committed to sustainable farming practices that not only
             enhance our coffee but also protect our environment. We're not just
             coffee growers; we're guardians of tradition and stewards of the
@@ -153,28 +157,28 @@
             sustainable legacy.
           </li>
           <li>
-            <strong>Empowering Communities:</strong>
+            <strong>Empowering Communities</strong> <br>
             By choosing Gikanda Coffee, you directly contribute to the welfare
             and prosperity of local farmers.
           </li>
           <li>
-            <strong>Certified Excellence:</strong>
+            <strong>Certified Excellence</strong> <br>
             Discover coffee with organic and Fair Trade certifications, a
             testament to our unwavering commitment to quality and ethics.
             Discover Our Latest Updates
           </li>
           <li>
-            <strong>New Coffee Varieties:</strong>
+            <strong>New Coffee Varieties</strong> <br>
             Explore our newest coffee varieties, carefully nurtured and
             handpicked for your enjoyment.
           </li>
           <li>
-            <strong>Community Engagement:</strong>
+            <strong>Community Engagement</strong> <br>
             Learn about our ongoing initiatives to uplift the lives of our
             community members.
           </li>
           <li>
-            <strong>Exclusive Offer:</strong>
+            <strong>Exclusive Offer</strong> <br>
             For a limited time, enjoy special pricing on our premium coffee
             beans. Come, journey with us as we unveil the remarkable story
             behind every cup of Gikanda Coffee. From the mountain's gentle
@@ -429,12 +433,18 @@
               info@gikandafarmers.com
             </div>
           </div>
+          <div class="socials">
+            <a href=""><img src="assets/icons/ig.png" alt="" /></a>
+            <a href=""><img src="assets/icons/twitter.png" alt="" /></a>
+            <a href=""><img src="assets/icons/linkedin.png" alt="" /></a>
+            <a href=""><img src="assets/icons/youtube.png" alt="" /></a>
+          </div>
         </div>
       </div>
 
       <div class="copyright">
-        Copyright © 2023 <span class="green-name">@Gikanda Farmers KE</span>.
-        All Rights Reserved.
+        Copyright © 2023 <span class="handle">@Gikanda Farmers KE</span>. All
+        Rights Reserved.
       </div>
     </footer>
   </body>

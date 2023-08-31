@@ -31,7 +31,9 @@ body {
 }
 
 .bg-video video {
-  width: 100%;
+  width: 100vw;
+  object-fit: cover;
+  min-height: 100vh;
 }
 
 .top-bar {
@@ -168,9 +170,18 @@ h1.headline {
   padding: 72px 32px;
 }
 
-.why-choose img {
-  flex-grow: 1;
+.why-choose .images {
+  position: relative;
+}
+
+.why-choose .coffee-beans {
   height: 453px;
+}
+
+.why-choose .images .coffee-cup {
+  position: absolute;
+  bottom: -480px;
+  left: 96px;
 }
 
 .why-choose .list {
@@ -185,11 +196,17 @@ h1.headline {
 
 .why-choose ul {
   list-style: none;
-  font-size: 14px;
 }
 
 .why-choose ul li {
+  font-size: 14px;
   margin-bottom: 8px;
+  color: #4d4d4d;
+}
+
+.why-choose ul li strong {
+  color: black;
+  font-family: "Nunito Sans", "Poppins", sans-serif;
 }
 
 .why-choose .thank-you {
@@ -407,14 +424,17 @@ h1.headline {
 .join-us {
   background-color: #f5f5f5;
   position: relative;
+  height: 300px;
 }
 
 .join-card {
+  position: absolute;
   border: 1px solid #dcdce5;
   border-radius: 16px;
-  margin: 0 160px;
   padding: 32px;
   background-color: white;
+  left: 160px;
+  right: 160px;
 }
 
 .join-card h2,
@@ -440,9 +460,9 @@ h1.headline {
   background-color: var(--primary);
   color: white;
   font-weight: 600;
-  padding: 18px 24px;
+  padding: 14px 18px;
   vertical-align: top;
-  margin-left: 24px;
+  margin-left: 72px;
   border-radius: 12px;
 }
 
@@ -461,17 +481,25 @@ h1.headline {
 .footer hr {
   border-color: rgb(85, 85, 85);
   border-width: 0.1px;
+  margin-top: 36px;
   margin-bottom: 64px;
 }
 
 .footer-info {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 72px;
 }
 
 .copyright {
   text-align: center;
   margin-top: 48px;
+  font-weight: 600;
+  font-family: "Nunito Sans", "Poppins", sans-serif;
+}
+
+.copyright .handle {
+  color: var(--primary);
 }
 
 .footer-title {
@@ -479,10 +507,6 @@ h1.headline {
   font-size: 20px;
   margin-bottom: 24px;
   display: inline-block;
-}
-
-.green-name {
-  color: var(--primary);
 }
 
 .contacts {
@@ -504,7 +528,16 @@ h1.headline {
   font-weight: 400;
 }
 
-.footer-info  span{
+.footer-info span {
   display: inline-block;
   margin-bottom: 12px;
+}
+
+.socials {
+  margin-top: 48px;
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 24px;
 }
