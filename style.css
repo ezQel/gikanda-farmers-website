@@ -15,12 +15,23 @@ body {
 }
 
 .header {
-  background: url("assets/bg.png");
-  background-color: rgba(0, 0, 0, 0.942);
-  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.726);
   color: white;
   min-height: 100vh;
   padding-bottom: 64px;
+  position: relative;
+}
+
+.bg-video {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.bg-video video {
+  width: 100%;
 }
 
 .top-bar {
@@ -48,7 +59,7 @@ ul.menu {
   color: white;
   text-decoration: none;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   padding: 12px;
 }
 
@@ -59,7 +70,7 @@ ul.menu {
 
 h1.headline {
   margin-top: 78px;
-  font-size: 84px;
+  font-size: 72px;
   font-weight: 700;
   text-align: center;
 }
@@ -288,10 +299,6 @@ h1.headline {
   text-align: start;
 }
 
-.farmer-info p {
-  color: #525760;
-}
-
 .farmer-info .date {
   font-family: "Nunito Sans", "Poppins", sans-serif;
   font-size: 12px;
@@ -300,7 +307,7 @@ h1.headline {
 }
 
 .farmer-info .name {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #090d2c;
@@ -308,8 +315,8 @@ h1.headline {
 
 .farmer-info p {
   color: #525760;
-  font-size: 14px;
   margin: 16px 0;
+  font-size: 12px;
 }
 
 .farmer-footer {
@@ -470,8 +477,34 @@ h1.headline {
 .footer-title {
   font-family: "Montserrat", "Poppins", sans-serif;
   font-size: 20px;
+  margin-bottom: 24px;
+  display: inline-block;
 }
 
 .green-name {
   color: var(--primary);
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.contacts img {
+  margin-right: 14px;
+}
+
+.contacts .info {
+  font-weight: 600;
+}
+
+.contacts .info small {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.footer-info  span{
+  display: inline-block;
+  margin-bottom: 12px;
 }
