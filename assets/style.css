@@ -149,6 +149,11 @@ h1.headline {
   text-align: end;
 }
 
+.large-text {
+  font-size: 24px;
+  padding: 0 180px;
+}
+
 .team {
   padding: 64px;
   background-color: #f5f5f5;
@@ -259,7 +264,6 @@ h1.headline {
 
 .why-choose .list .impact:hover p {
   cursor: default;
-  color: initial;
 }
 
 .impact-cards {
@@ -278,20 +282,12 @@ h1.headline {
   font-weight: 600;
   font-size: 20px;
   color: #1c1d4e;
+  margin-bottom: 10px;
 }
 
 .impact p {
   font-size: 12px;
   color: #1c1d4e;
-}
-
-.impact:hover {
-  background-color: var(--primary);
-  color: white;
-}
-
-.impact:hover > p {
-  color: white;
 }
 
 .farmers {
@@ -303,18 +299,23 @@ h1.headline {
   font-size: 48px;
   font-weight: 700;
   color: #1c1d4e;
+  margin-bottom: 32px;
+}
+
+.farmers p {
+  margin-bottom: 72px;
 }
 
 .farmers-list {
   margin-top: 48px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 48px;
 }
 
 .farmer {
   border-radius: 8px;
   border: 1px solid #eceff4;
-  width: 360px;
   vertical-align: top;
 }
 
@@ -401,8 +402,8 @@ h1.headline {
   display: grid;
   gap: 96px;
   grid-template-columns: 1fr 1fr;
-  padding: 0 120px;
-  padding-bottom: 120px;
+  padding:  120px;
+  /* padding-bottom: 120px; */
 }
 
 .chairman h2 {
@@ -600,7 +601,7 @@ h1.headline {
   padding-top: 160px;
 }
 
-.varieties h2 {
+.section-title {
   font-size: 48px;
   font-weight: 700;
   color: #1c1d4e;
@@ -700,5 +701,22 @@ h1.headline {
 .community-impact p {
   color: #1c1d4e;
   margin: 48px auto;
+}
+
+.community-initiatives {
+  background-color: white;
+  padding: 120px;
+}
+
+.community-initiatives .section-title {
+  margin-bottom: 64px;
+}
+
+.community-initiatives .impact-cards {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.community-initiatives .impact {
+  background-color: #46af4d22;
 }
 /**COMMUNITY IMPACT **/
