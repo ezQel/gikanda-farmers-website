@@ -784,3 +784,25 @@ h1.headline {
   text-align: center;
   padding: 120px 180px;
 }
+
+.map {
+  background-color: #efeff8;
+  border-radius: 16px;
+}
+
+.socials {
+  padding-bottom: 100px;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.social-links a.link {
+  display: inline-block;
+  margin: 18px;
+}
+
+.social-links a.link img {
+  width: 96px;
+}
