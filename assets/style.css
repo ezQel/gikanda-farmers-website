@@ -184,6 +184,9 @@ h1.headline {
 .member img {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
 }
 
 .member .member-details {
@@ -333,6 +336,8 @@ h1.headline {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
 .farmer-info {
@@ -622,7 +627,6 @@ h1.headline {
   color: #1c1d4e;
   margin-bottom: 48px;
   font-size: 24px;
-  text-align: center;
 }
 
 .variety-cards {
@@ -786,6 +790,7 @@ h1.headline {
 
 .commitments li strong {
   display: inline-block;
+  color: var(--primary);
   margin-bottom: 12px;
 }
 
@@ -822,8 +827,26 @@ h1.headline {
   grid-template-columns: 1fr 2fr;
 }
 
-.certifications .impact{
-  background: url('badge.svg') no-repeat top right;
+.certifications .impact {
+  background: url("badge.svg") no-repeat top right;
   background-size: 64px;
   background-color: white;
+}
+
+.about {
+  background: url("about-bg.svg") no-repeat;
+  background-color: #efeff8;
+  background-size: 1100px;
+  background-position: 700px -600px;
+}
+
+.contact {
+  background: url("contact-bg.svg") no-repeat left bottom fixed;
+  background-color: #efeff8;
+  background-size: 1000px;
+  backdrop-filter: blur(2px);
+}
+
+.about .large-text {
+  text-align: center;
 }
