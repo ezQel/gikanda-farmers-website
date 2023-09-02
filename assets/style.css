@@ -34,7 +34,7 @@ body {
 }
 
 .bg-video video {
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
   min-height: 100vh;
 }
@@ -57,9 +57,8 @@ body {
   width: 300px;
 }
 
-.menu {
+.spacer {
   flex-grow: 1;
-  text-align: end;
 }
 
 ul.menu {
@@ -102,6 +101,17 @@ ul.menu {
   bottom: 0;
 }
 
+.toggle {
+  all: unset;
+  display: none;
+  padding: 8px;
+}
+
+.toggle:hover,
+.toggle:active {
+  background-color: #46af4d22;
+}
+
 h1.headline {
   margin-top: 78px;
   font-size: 72px;
@@ -109,9 +119,8 @@ h1.headline {
   text-align: center;
 }
 
-.paragraph {
-  display: flex;
-  justify-content: center;
+h1.headline .break {
+  display: block;
 }
 
 .details {
@@ -834,7 +843,8 @@ h1.headline {
 }
 
 .about {
-  background: url("about-bg.svg")  no-repeat, url("contact-bg.svg") no-repeat bottom right;
+  background: url("about-bg.svg") no-repeat,
+    url("contact-bg.svg") no-repeat bottom right;
   background-color: #efeff8;
   background-size: 1100px, 480px;
   background-position: 700px -600px, bottom left;
@@ -848,4 +858,57 @@ h1.headline {
 
 .about .large-text {
   text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .header.home .top-bar .logo,
+  .top-bar .logo {
+    width: 180px;
+  }
+
+  .menu li {
+    display: none;
+  }
+
+  .toggle {
+    display: inline;
+    vertical-align: bottom;
+  }
+
+  .header {
+    padding: 16px;
+  }
+
+  h1.headline {
+    margin-top: 46px;
+    font-size: 26px;
+    text-align: start;
+  }
+
+  h1.headline .break {
+    display: inline;
+  }
+
+  .details {
+    font-size: 14px;
+    text-align: start;
+    margin-top: 64px;
+  }
+
+  .stats {
+    margin: 0;
+    margin-top: 64px;
+  }
+
+  .stats > .stat {
+    margin: 12px;
+  }
+
+  .stat-figure {
+    font-size: 24px;
+  }
+
+  .stat-info {
+    font-size: 12px;
+  }
 }
