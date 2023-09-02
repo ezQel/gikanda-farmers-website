@@ -7,7 +7,7 @@ const totalFarmers = 400;
 const totalYears = 23;
 
 const interval = setInterval(() => {
-  farmersCount++;
+  farmersCount += 2;
   yearsCount++;
 
   activeFarmers.textContent = `${farmersCount}+`;

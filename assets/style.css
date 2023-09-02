@@ -505,14 +505,12 @@ h1.headline {
   background: url("contact-bg.svg") no-repeat left bottom fixed;
   background-color: #efeff8;
   background-size: 360px;
-  background-color: #0a0703;
   padding: 64px 120px;
-  color: white;
+  color: #090d2c;
 }
 
 .footer hr {
-  border-color: rgb(85, 85, 85);
-  border-width: 0.1px;
+  border-color: #1c1d4e1f;
   margin-top: 36px;
   margin-bottom: 64px;
 }
@@ -526,7 +524,6 @@ h1.headline {
 
 .footer-info .form {
   padding-right: 32px;
-  text-align: end;
 }
 
 .footer-info input {
@@ -541,7 +538,6 @@ h1.headline {
   border: none;
   width: 100%;
   font-size: 16px;
-  background-color: #f6f7f8;
 }
 
 .footer-info input:focus,
@@ -553,12 +549,12 @@ h1.headline {
   display: inline-block;
   margin-bottom: 12px;
   text-decoration: none;
-  color: white;
+  color: #090d2c;
   font-size: 14px;
 }
 
 .footer-info a:visited {
-  color: white;
+  color: #090d2c;
 }
 
 .footer-info a:hover {
@@ -598,7 +594,7 @@ h1.headline {
 }
 
 .contacts .info small {
-  color: #aaa;
+  color: #4d4d4d;
   font-weight: 400;
 }
 
@@ -630,6 +626,7 @@ h1.headline {
   color: #1c1d4e;
   margin-bottom: 48px;
   font-size: 24px;
+  text-align: center;
 }
 
 .variety-cards {
@@ -837,10 +834,10 @@ h1.headline {
 }
 
 .about {
-  background: url("about-bg.svg") no-repeat;
+  background: url("about-bg.svg")  no-repeat, url("contact-bg.svg") no-repeat bottom right;
   background-color: #efeff8;
-  background-size: 1100px;
-  background-position: 700px -600px;
+  background-size: 1100px, 480px;
+  background-position: 700px -600px, bottom left;
 }
 
 .contact {
