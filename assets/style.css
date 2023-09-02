@@ -105,6 +105,7 @@ ul.menu {
   all: unset;
   display: none;
   padding: 8px;
+  border-radius: 6px;
 }
 
 .toggle:hover,
@@ -119,7 +120,7 @@ h1.headline {
   text-align: center;
 }
 
-h1.headline .break {
+.break {
   display: block;
 }
 
@@ -131,6 +132,10 @@ h1.headline .break {
 
 .stats {
   text-align: center;
+
+  .stats > .stat {
+    margin: 12px;
+  }
   margin-left: 120px;
 }
 
@@ -670,6 +675,7 @@ h1.headline .break {
 .variety p {
   font-size: 12px;
   color: #1c1d4e;
+  text-align: start;
 }
 
 .variety-mug {
@@ -881,16 +887,16 @@ h1.headline .break {
 
   h1.headline {
     margin-top: 46px;
-    font-size: 26px;
+    font-size: 28px;
     text-align: start;
   }
 
-  h1.headline .break {
+  .break {
     display: inline;
   }
 
   .details {
-    font-size: 14px;
+    font-size: 16px;
     text-align: start;
     margin-top: 64px;
   }
@@ -910,5 +916,78 @@ h1.headline .break {
 
   .stat-info {
     font-size: 12px;
+  }
+
+  .large-text {
+    font-size: 18px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .why-choose {
+    grid-template-columns: 1fr;
+  }
+
+  .why-choose .images {
+    display: none;
+  }
+
+  .why-choose h2 {
+    font-size: 24px;
+  }
+
+  .impact-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .varieties {
+    padding: 16px;
+  }
+
+  .varieties p {
+    font-size: 16px;
+  }
+
+  .varieties .variety-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .variety p {
+    font-size: 12px;
+  }
+
+  .variety-mug img {
+    top: -180px;
+  }
+
+  .farmers {
+    padding: 120px 16px;
+  }
+
+  .farmers h2 {
+    font-size: 28px;
+  }
+
+  .farmers-list {
+    grid-template-columns: 1fr;
+  }
+
+  .chairman {
+    grid-template-columns: 1fr;
+    padding: 48px 16px;
+  }
+
+  .chairman h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .chairman .coffee {
+    max-width: 100%;
+    object-fit: cover;
   }
 }
