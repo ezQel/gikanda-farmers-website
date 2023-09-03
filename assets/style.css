@@ -104,7 +104,8 @@ ul.menu {
 .toggle {
   all: unset;
   display: none;
-  padding: 8px;
+  padding: 12px;
+  padding-bottom: 8px;
   border-radius: 6px;
 }
 
@@ -872,13 +873,53 @@ h1.headline {
     width: 180px;
   }
 
-  .menu li {
+  body.backdrop::after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.596);
+  }
+
+  .menu {
     display: none;
+    position: fixed;
+    z-index: 2;
+    left: 48px;
+    right: 48px;
+    top: 96px;
+    bottom: 96px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 48px 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .menu li {
+    display: block;
+    margin: 0;
+  }
+
+  .menu li a {
+    color: #090d2c !important;
+    font-size: 24px;
+    display: inline-block;
+    width: 100%;
+    padding: 24px 0;
+  }
+
+  .menu li a:hover,
+  .menu li a.active {
+    color: #46af4d !important;
   }
 
   .toggle {
-    display: inline;
-    vertical-align: bottom;
+    display: inline-block;
+    cursor: pointer;
   }
 
   .header {
@@ -962,6 +1003,7 @@ h1.headline {
 
   .variety-mug img {
     top: -180px;
+    left: -16px;
   }
 
   .farmers {
@@ -969,7 +1011,7 @@ h1.headline {
   }
 
   .farmers h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .farmers-list {
