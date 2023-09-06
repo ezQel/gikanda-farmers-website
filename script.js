@@ -4,11 +4,11 @@ const years = document.querySelector("#num-years");
 if (activeFarmers && years) {
   let farmersCount = 0;
   let yearsCount = 0;
-  const totalFarmers = 400;
+  const totalFarmers = 4000;
   const totalYears = 23;
 
   const interval = setInterval(() => {
-    farmersCount += 2;
+    farmersCount += 20;
     yearsCount++;
 
     activeFarmers.textContent = `${farmersCount}+`;
