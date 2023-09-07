@@ -860,12 +860,50 @@ h1.headline {
   gap: 24px;
 }
 
+.gallery-item {
+  position: relative;
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 12px;
+  padding-top: 32px;
+  background-color: #1c1d4ea2;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  display: none;
+}
+
+.gallery-item:hover figcaption {
+  display: block;
+}
+
 .gallery-item img,
 .gallery-item video {
   width: 100%;
   object-fit: cover;
   border-radius: 12px;
   height: 300px;
+}
+
+a.whatsapp {
+  all: unset;
+  position: fixed;
+  bottom: 32px;
+  right: 48px;
+  cursor: pointer;
+  padding: 8px;
+  padding-bottom: 2px;
+  border-radius: 16px;
+}
+
+a.whatsapp:hover {
+  background-color: #46af4d5c;
 }
 
 @media screen and (max-width: 1000px) {

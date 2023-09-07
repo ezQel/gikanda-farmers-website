@@ -87,7 +87,7 @@
     </section>
 
     <section class="team">
-      <p class="partnership" >
+      <p class="partnership">
         <strong>Partnerships</strong> <br />
         We believe in the power of collaboration. Our cooperative has forged
         partnerships with local organizations, NGOs, and businesses that share
@@ -236,15 +236,25 @@
               possible.
             </small>
           </p>
-          <div class="form">
-            <input type="email" placeholder="Enter your email" />
+          <form
+            class="form"
+            action="https://formsubmit.co/gikandacoffee.mtkenyaslopes@gmail.com"
+            method="POST"
+          >
+            <input type="email" name="email" placeholder="Enter your email" />
             <textarea
               id=""
               rows="5"
+              name="message"
               placeholder="Enter your message here"
             ></textarea>
-            <button class="become-member">Send Message</button>
-          </div>
+            <input
+              type="hidden"
+              name="_next"
+              value="https://gikandafarmers.com/thanks.html"
+            />
+            <button type="submit" class="become-member">Send Message</button>
+          </form>
         </div>
         <div>
           <strong class="footer-title">Site</strong> <br />
