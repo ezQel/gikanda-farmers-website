@@ -351,7 +351,7 @@ h1.headline {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   width: 100%;
-  height: 240px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -866,21 +866,21 @@ h1.headline {
 
 .gallery-item figcaption {
   position: absolute;
-  top: 240px;
+  top: 190px;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 8px;
   padding: 12px;
   padding-top: 32px;
-  background-color: #1c1d4ea2;
-  border-radius: 12px;
+  background-color: #1c1d4e70;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   color: white;
-  font-weight: 700;
-  visibility: hidden;
   transition: all 300ms;
 }
 
 .gallery-item:hover figcaption {
+  border-radius: 12px;
   visibility: visible;
   top: 0;
 }
